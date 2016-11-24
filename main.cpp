@@ -100,18 +100,13 @@ int FindWay(const int m, const int n, int  a[][sb]) { // находит минимальную дли
   MinAround(B, cura, curb, m, n);
   int count = B[cura][curb] + 1;
 
-  while ((cura != 0) || (curb != n - 1)) {
-    MinAround(B, cura, curb, m, n);
-
-  }
-
   return count;
 }
 
 
 int main() {
 
-  int a[sa][sb]={ {1, 1, 1, 1, 0},
+  int a[sa][sb]={ {1, 1, 1, 1, 0}, //на месте игрека должен стоять 0, а на месте икса 1
                 {1, 0, 1, 0, 1},
                 {0, 1, 1, 0, 1},
                 {1, 1, 1, 1, 1} };
